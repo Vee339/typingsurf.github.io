@@ -1,0 +1,103 @@
+@font-face{
+    font-family:disco;
+    src: url(../fonts/DISCO___-webfont.woff);
+}
+*{
+    padding:0;
+    box-sizing:border-box;
+    margin:0;
+    /*border:1px solid #00e1ff;*/
+}
+body{
+    background:#e9d8a6;
+}
+section{
+    width:100%;
+    height:733px;
+    position:relative;
+}
+.startGame{
+    position:absolute;
+    bottom:150px;
+    left:310px;
+    width:200px;
+    height:50px;
+    border-radius:10px;
+    color:#fff;
+    background: rgb(28, 117, 12);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.5rem;
+    cursor:pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index:1000;
+}
+.startGame:hover{
+    background:rgb(19, 68, 10);
+}
+.timer{
+    position:absolute;
+    right:23%;
+    top:23%;
+    font-size:3rem;
+    color:rgb(28, 117, 12);
+    display:none;
+}
+#header{
+    width:100%;
+    height:120px;
+    padding:20px 50px 0 50px;
+    display:flex;
+    justify-content:space-between;
+}
+#header #logo{
+    height:100%;
+    width:30%;
+}
+#header #speeddetails{
+    background:#ee9b00;
+    width:250px;
+    height:70px;
+    border-radius:10px;
+    padding:10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#header #logo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.content{
+    width:100%;
+    height:450px;
+}
+.content .typingpara{
+    width:912px;
+    height:270px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin-bottom:100px;
+    border:1px solid #001219;
+    border-radius:15px;
+    color:#001219;
+    padding:30px;
+    font-size:1.5rem;
+    font-family:disco;
+    font-weight:bold;
+    user-select: none;
+
+}
+.cpslck{
+    color:rgb(197, 7, 7);
+    font-family:'Nunito', sans-serif;
+    position:absolute;
+    left:21%;
+    bottom:25%;
+    display:none;
+}
+.cpslck.active{
+    display:block;
+}
